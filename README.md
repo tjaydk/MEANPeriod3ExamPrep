@@ -2,12 +2,12 @@ Explain, generally, what is meant by a NoSQL database.
 ----------------------------------------------------
 NoSQL database is a non-relational type datebase which is 'usually' not communicated with via SQL queries. Example of an NoSQL database is the MongoDB which is an document-oriented database which uses a form of JSON(BSON) for storage.
 Explain Pros & Cons in using a NoSQL database like MongoDB as your data store, compared to a traditional Relational SQL Database like MySQL.
-Pros:
+#####Pros:
 - Easily scalable f.x. using clusters of cheap hardware
 - Schemaless
 - Simple to setup and use
 - Can be faster than some SQL/Relational Databases
-Cons:
+#####Cons:
 - Data size is bigger than SQL/Relational Databases f.x. due to storing of fieldnames.
 - Difficult to run business analysis on.
 - New technology and therefore not yet standardized
@@ -37,9 +37,11 @@ As stated earlier the NoSQL databases is schemaless, therefore their are no real
 
 Explain how redis "fits" into the NoSQL world, and provide an example of how to use it.
 ----------------------------------------------------
+Redis is an In-Memory Key-Value database which is extremely fast due to the fact that it stores the data in the servers memory, therefore as with a hashmap it can be search through very fast and retrieve the information. It does not persist the data as per sei, but takes a snapshot at some given point.
 
 Explain, using a relevant example, how redis (or a similar) can increase scalability (drastic) for a server using server side sessions
 ----------------------------------------------------
+You can use partitioning with multiple redis instances which makes it possible to store data on multiple machines easily, thereby giving you the possibility to easily scale by adding additional machines/servers to your datahouse.
 
 Explain, using a relevant example, a full MEAN application including relevant test cases to test the REST-API (not on the production database)
 ----------------------------------------------------
